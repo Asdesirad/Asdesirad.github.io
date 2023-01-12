@@ -1,0 +1,238 @@
+body{
+    background: #f3f5fc;
+}
+.texto, .leyenda, .botones, .boton-encriptar, .boton-desencriptar, .mensaje-resultado1, .mensaje-resultado2, .resultado, .boton-copiar, footer h1, #elementos-resultado{
+    font-family: 'EB Garamond', serif;
+}
+#logo{
+    padding: 3rem 3rem 2rem ;
+    display: block;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.cajatexto{
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+    width: 40rem;
+    height: 35rem;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    background: #f3f5fc;
+    color: #0a3871;
+    resize: none;
+}
+.texto:invalid{
+    outline: 3px solid red;
+}
+.exclamacion{
+    margin-top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.botones{
+    display: inline;
+    margin: 0 auto;
+}
+.boton-encriptar, .boton-desencriptar, .boton-copiar{
+    width: 18rem;
+    height: 4rem;
+    margin: 1rem 1rem;
+    border-radius: 24px;
+    font-size: 1.5rem;
+}
+.boton-encriptar{
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    transition: 400ms;
+}
+.boton-desencriptar{
+    background-color: #d8dfe8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    transition: 400ms;
+}
+.boton-encriptar:hover, .boton-desencriptar:hover, .boton-copiar:hover{
+    cursor: pointer;
+    opacity: .9;
+    border: 1px solid darkgoldenrod;
+}
+.boton-encriptar:active, .boton-desencriptar:active, .boton-copiar:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.8), inset 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+#elementos-resultado{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 679px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px 8px rgba(0, 0, 0, 0.18);
+}
+.muneco{
+    width: 336px;
+    height: 304px;
+    padding: 1rem;
+    margin: auto auto 0;
+}
+.mensaje-resultado1, .mensaje-resultado2{
+    padding: .5rem 0;
+    text-align: center;
+}
+.mensaje-resultado1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.mensaje-resultado2{
+    margin-bottom: auto;
+}
+.resultado{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background: white;
+    color: #0a3871;
+    resize: none;
+    margin: 1.5rem;
+    height: 70%;
+}
+.boton-copiar{
+    background-color: #d8dfe8;
+    color: darkblue;
+    border: 1px solid #0A3871;
+    margin: 1rem auto auto;
+}
+footer{
+    display: flex block;
+    align-content: flex-end;
+}
+footer hr{
+    margin-top: 2rem;
+}
+footer h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.creador{
+    padding-top: 1rem;
+}
+footer img{
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 1.5rem 1rem;
+    display: inline-flex;
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 736px){
+    #logo{
+        padding: 1rem 0;
+        width: 9rem;
+        height: 3rem;
+
+    }
+    main{
+        display: block;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .botones{
+        width: 90%;
+        margin: auto;
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar{
+        width: 95%;
+    }
+    .muneco{
+        display: none;
+    }
+    .cajatexto, .cajaresultado{
+        display: flex;
+        width: 100%;
+    }
+    .cajaresultado{
+        height: auto;
+    }
+    .mensaje-resultado1{
+        margin: auto auto 0;
+    }
+    .mensaje-resultado2{
+        margin: 0 auto auto;
+    }
+    #elementos-resultado{
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .resultado{
+        height: 20rem;
+        margin: 5%;
+    }
+    .boton-copiar{
+        margin-bottom: 1rem;
+    }
+    #texto{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 737px) and (max-width: 1024px){
+    #logo{
+        padding: 1rem 0;
+        width: 9rem;
+        height: 3rem;
+        margin: 3rem 0;
+    }
+    main{
+        display: block;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .botones{
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar{
+        width: 95%;
+    }
+    .muneco{
+        display: none;
+    }
+    .cajatexto, .cajaresultado{
+        display: flex;
+        width: 100%;
+    }
+    .cajaresultado{
+        height: auto;
+    }
+    .mensaje-resultado1{
+        margin: auto auto 0;
+    }
+    .mensaje-resultado2{
+        margin: 0 auto auto;
+    }
+    #elementos-resultado{
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .resultado{
+        height: 20rem;
+        margin: 5%;
+    }
+    .boton-copiar{
+        margin-bottom: 1rem;
+    }
+    #texto{
+        width: 100%;
+    }
+}

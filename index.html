@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="recursos/css/reset.css" />
+        <link rel="stylesheet" href="recursos/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap"
+        rel="stylesheet"
+        />
+        <script src="recursos/js/codigo.js"></script>
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <header>
+            <!--Esta seccion es el logo de la pagina en su seccion superior-->
+            <div class="caja">
+                <h1>
+                <img src="recursos/img/Logo.png" id="logo" alt="Logo de alura" />
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="cajatexto">
+                <!--Aqui va la caja de texto para introducir el codigo a transformar-->
+                <form id="formulario" >
+                    <div>
+                        <textarea
+                            id="texto"
+                            class="texto"
+                            placeholder="Ingrese el texto a encriptar o desencriptar"
+                            spellcheck="false"
+                            pattern="[a-z\s,.!]+"
+                            autofocus
+                            autocomplete="off"
+                            tabindex="1"
+                            title="Solo minúsculas, sin acentos ni caracteres especiales"
+                        ></textarea>
+                        <!--Apartado con leyenda abajo de caja de texto-->
+                        <p class="leyenda">
+                            <img
+                                src="recursos/img/bi_exclamation-circle-fill.png"
+                                class="exclamacion"
+                                alt="signo de exclamación"
+                            />
+                            Solo minúsculas, sin acentos ni caracteres especiales
+                        </p>
+                    </div>
+                    <div class="botones">
+                        <!--Botones de interaccion del usuario-->
+                        <input
+                            type="button"
+                            class="boton-encriptar"
+                            id = "boton-encriptar"
+                            tabindex="2"
+                            onclick="encriptar()"
+                            value = "Encriptar"
+                        >
+                        <input
+                            type="button"
+                            class="boton-desencriptar"
+                            id = "boton-desencriptar"
+                            tabindex="3"
+                            onclick="desencriptar()"  
+                            value= "Desencriptar">
+                    </div>
+                </form>
+            </section>
+            <section class="cajaresultado">
+                <!--Aqui esta la zona de resultados en su estado inicial, el cual cambia tras la ejecucion de las funciones-->
+                <div id="elementos-resultado">
+                    <img src="recursos/img/Muñeco.png" class="muneco" id="muneco" alt="muñeco on lupa"/>
+                    <p class="mensaje-resultado1" id="msj-res1">
+                        Ningún mensaje fue encontrado
+                    </p>
+                    <p class="mensaje-resultado2" id="msj-res2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <!--pie de pagina con informacion del creador-->
+                <hr />
+                <h1 class="creador">Creado por Héctor Román</h1>
+                <h1>
+                    <a target="_blank" href="https://github.com/Asdesirad"><img src="recursos/img/github.png" alt="Perfil personal de github"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/Asdesirad"><img src="recursos/img/linkedin.png" alt="Perfil personal de LinkedIn"></a>
+                </h1>
+            </div>
+        </footer>
+    </body>
+</html>
